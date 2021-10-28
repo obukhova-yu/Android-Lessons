@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Second Module Registration</string>
+
+    <string-array name="phone_type" >
+        <item>phone type</item>
+        <item>phone type1</item>
+        <item>phone type2</item>
+    </string-array>
+
+    <string-array name="email_type" >
+        <item>email type</item>
+        <item>email type1</item>
+        <item>email type2</item>
+    </string-array>
+</resources>
