@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/team_1_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEAM A"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/vert_line"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/team_2_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEAM B"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="@id/vert_line"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/team_1_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#000"
+        android:textSize="60dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/vert_line"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/team_1_name" />
+
+    <TextView
+        android:id="@+id/team_2_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#000"
+        android:textSize="60dp"
+        app:layout_constraintLeft_toLeftOf="@id/vert_line"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/team_1_name" />
+
+    <View
+        android:id="@+id/vert_line"
+        android:layout_width="1dp"
+        android:layout_height="400dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/plus_1_point_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="48dp"
+        android:paddingVertical="10dp"
+        android:text="+1 POINT"
+        android:textSize="14dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/vert_line"
+        app:layout_constraintTop_toBottomOf="@id/team_1_score"
+        android:backgroundTint="@android:color/holo_blue_light"/>
+    <Button
+        android:id="@+id/plus_1_point_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="48dp"
+        android:paddingVertical="10dp"
+        android:text="+1 POINT"
+        android:textSize="14dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="40dp"
+        app:layout_constraintLeft_toLeftOf="@id/vert_line"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/team_2_score"
+        android:backgroundTint="@android:color/holo_blue_light"/>
+
+    <Button
+        android:id="@+id/plus_2_point_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="48dp"
+        android:paddingVertical="10dp"
+        android:text="+2 POINT"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:backgroundTint="@android:color/holo_blue_light"
+        app:layout_constraintRight_toRightOf="@id/vert_line"
+        app:layout_constraintTop_toBottomOf="@id/plus_1_point_left"
+        />
+
+    <Button
+        android:id="@+id/plus_2_point_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="48dp"
+        android:paddingVertical="10dp"
+        android:text="+2 POINT"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="@id/vert_line"
+        android:backgroundTint="@android:color/holo_blue_light"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plus_1_point_right"/>
+
+    <Button
+        android:id="@+id/plus_3_point_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="48dp"
+        android:paddingVertical="10dp"
+        android:text="+3 POINT"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/vert_line"
+        app:layout_constraintTop_toBottomOf="@id/plus_2_point_left" />
+
+    <Button
+        android:id="@+id/plus_3_point_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="48dp"
+        android:paddingVertical="10dp"
+        android:text="+3 POINT"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        app:layout_constraintLeft_toLeftOf="@id/vert_line"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plus_2_point_right" />
+
+    <Button
+        android:id="@+id/central_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        android:textColor="@color/black"
+        android:backgroundTint="@android:color/darker_gray"
+        android:textSize="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vert_line"
+        android:layout_marginTop="40dp"
+        android:paddingHorizontal="48dp"
+        android:paddingVertical="10dp"
+        />
+    <TextView
+        android:id="@+id/viral_android_com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ViralAndroid.com"
+        android:textSize="23dp"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/central_btn"
+        android:layout_marginTop="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
